@@ -1,0 +1,132 @@
+/*
+Project Title : Chat GPT Clone With Javascript (CSS - HTML) 
+Project Name : GeekyGPT
+Auther : Armin(Ali) Rowshani
+Description : ChatGPT is a natural language processing tool driven by AI technology that allows you to have human-like conversations and much more with the chatbot. The language model can answer questions and assist you with tasks like composing emails, essays, and code.
+Version : 1.0
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+* {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+ }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(52,53,65,1);
+    display: flex;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 600;
+    padding: 200px 0;
+    color: #ECECF1;
+}
+
+.side-bar {
+    background-color: #202123;
+    width: 244px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-content {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.chat-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    color : rgba(255, 255, 255, .5);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+input {
+    border: none;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(32,33,35,.5);
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+    padding-left: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, .05) 0px 54px 55px,
+    rgba(0, 0, 0, .05) 0px -12px 30px,
+    rgba(0, 0, 0, .05) 0px 4px 6px,
+    rgba(0, 0, 0, .05) 0px 12px 3px,
+    rgba(0, 0, 0, .09) 0px -3px 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input-section {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+}
+
+.input-section #submit {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    bottom: 15px;
+    transform: rotate(90deg);
+}
+
+
+
+
+
+/* SIDE BAR STYLES */
+
+button {
+    border: solid .5px rgba(255, 255, 255, .2);
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav {
+    border-top: solid .5px rgba(255, 255, 255, .2);
+    margin: 5px;
+    padding: 5px;
+}
+
+nav p {
+    text-align: center;
+}
+
+.chat-history {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chat-history p {
+    cursor: pointer;
+}
